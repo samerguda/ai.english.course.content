@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Course Contents</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            direction: ltr;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Artificial Intelligence Course Contents</h1>
+<h1 style="color: blue;">introduction - ML -DL -python-NLP -vision - practical -Real</h1>
+<h1 style="color: blue;">IMDPN VPR</h1>
+
+<div id="course-contents">
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Module</th>
+            <th>Contents</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Introduction to AI</td>
+            <td>
+                <ul>
+                    <li>Definition and history of AI</li>
+                    <li>Fields of AI application</li>
+                    <li>Ethics and responsibility in AI</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Machine Learning</td>
+            <td>
+                <ul>
+                    <li>Basic concepts of Machine Learning</li>
+                    <li>Types of Machine Learning (Supervised, Unsupervised, Reinforcement)</li>
+                    <li>Basic algorithms (e.g., Linear Regression, Decision Trees, Neural Networks)</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Deep Learning</td>
+            <td>
+                <ul>
+                    <li>Introduction to Deep Neural Networks</li>
+                    <li>Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs)</li>
+                    <li>Applications of Deep Learning in image processing and speech recognition</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Programming with Python</td>
+            <td>
+                <ul>
+                    <li>Basics of Python programming</li>
+                    <li>Machine Learning and Deep Learning libraries such as TensorFlow, Keras, and PyTorch</li>
+                    <li>Data processing and analysis using libraries like NumPy and Pandas</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Natural Language Processing (NLP)</td>
+            <td>
+                <ul>
+                    <li>Introduction to NLP</li>
+                    <li>Techniques like text classification, sentiment analysis, text generation</li>
+                    <li>Language models like BERT and GPT</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Computer Vision</td>
+            <td>
+                <ul>
+                    <li>Principles of Computer Vision</li>
+                    <li>Applications like image and video recognition</li>
+                    <li>Techniques like feature extraction and pattern recognition</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Practical Projects</td>
+            <td>
+                <ul>
+                    <li>Developing practical projects to apply the acquired knowledge</li>
+                    <li>Examples of projects like price prediction, product recommendations, image analysis</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>AI in the Real World</td>
+            <td>
+                <ul>
+                    <li>Exploring AI applications in various fields such as healthcare, finance, self-driving cars</li>
+                    <li>Challenges of implementing AI in the real world</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="buttons">
+    <button onclick="copyContents()">Copy</button>
+    <button onclick="sendWhatsApp()">Send by WhatsApp</button>
+    <button onclick="printContents()">Print</button>
+    <button onclick="window.location.href='another-page.html'">Direct to Another Page</button>
+</div>
+
+<script>
+    function copyContents() {
+        const contents = document.getElementById('course-contents').innerText;
+        navigator.clipboard.writeText(contents).then(() => {
+            alert('Contents copied to clipboard');
+        });
+    }
+
+    function sendWhatsApp() {
+        const contents = document.getElementById('course-contents').innerText;
+        const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(contents)}`;
+        window.open(url, '_blank');
+    }
+
+    function printContents() {
+        window.print();
+    }
+</script>
+
+</body>
+</html>
